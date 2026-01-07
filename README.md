@@ -1,0 +1,1 @@
+# Manual-Software-Testing-with-Black-Box-Techniques
