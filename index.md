@@ -1,61 +1,104 @@
 ---
 layout: default
-title: Home
+title: Manual Software Testing with Black-Box Techniques
 ---
 
-> 🎯 **Learn to test software like a pro — no coding required!**
+<main>
+  <section class="hero">
+    <span class="hero-badge">📚 Free Learning Materials</span>
+    <h1>Manual Software Testing with Black-Box Techniques</h1>
+    <p class="hero-subtitle">Learn how to test software without writing code, using practical black box testing techniques applied in real-world software teams.</p>
+    
+    <div class="hero-note">
+      📖 The course is available in <strong>multiple learning formats</strong>. This repository stores the <strong>reading format</strong> only.
+    </div>
 
-This repository contains all the learning materials for this course in **reading format**.  
-The course is also available in video and interactive formats on the learning platform.
+    <div class="cta-buttons">
+      <a href="https://dojo.skill-wanderer.com/course/view.php?id=10" class="btn btn-primary">
+        🚀 Start Learning Now
+      </a>
+      <a href="https://github.com/skill-wanderer/Manual-Software-Testing-with-Black-Box-Techniques" class="btn btn-secondary">
+        📂 View on GitHub
+      </a>
+    </div>
+  </section>
 
-<a href="https://dojo.skill-wanderer.com/course/view.php?id=10" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px 0;">🚀 Start Learning Now</a>
+  <section class="section">
+    <h2 class="section-title">💡 What You Will Learn</h2>
+    <p class="section-subtitle">Master the essential skills of a professional manual tester</p>
+    
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Requirements Analysis</h3>
+        <p>Understand software requirements from a user's perspective and identify what needs to be tested.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>Test Case Design</h3>
+        <p>Design effective manual test cases using proven black box techniques like equivalence partitioning.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🕵️</div>
+        <h3>Exploratory Testing</h3>
+        <p>Perform exploratory testing to uncover hidden defects that scripted tests might miss.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Web & Mobile Testing</h3>
+        <p>Test web and mobile applications systematically across different devices and browsers.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🐛</div>
+        <h3>Bug Reporting</h3>
+        <p>Write clear, professional bug reports that developers can understand and act on quickly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Agile Collaboration</h3>
+        <p>Collaborate effectively with developers and product managers in modern Agile teams.</p>
+      </div>
+    </div>
+  </section>
 
----
+  <section class="section">
+    <h2 class="section-title">🎯 Course Approach</h2>
+    <p class="section-subtitle">Learning by doing, not just reading</p>
+    
+    <div class="approach-box">
+      <h3>Hands-on Practice, Not Theory</h3>
+      <p>You will work with real application scenarios and complete a final manual testing project that can be used as part of your <strong>QA portfolio</strong>. Every lesson focuses on practical skills you can apply immediately.</p>
+    </div>
+  </section>
 
-## 💡 What Is This Course About?
+  <section class="section">
+    <h2 class="section-title">👥 Who Is This Course For?</h2>
+    <p class="section-subtitle">Designed for anyone starting their QA journey</p>
+    
+    <div class="audience-grid">
+      <div class="audience-card">
+        <div class="audience-icon">🌱</div>
+        <h3>Beginners</h3>
+        <p>No programming background needed. Start from zero and build real skills.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">🔄</div>
+        <h3>Career Switchers</h3>
+        <p>Transitioning into the QA / testing field from another career.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">💻</div>
+        <h3>Junior Developers</h3>
+        <p>Strengthen your testing mindset and write better, more testable code.</p>
+      </div>
+    </div>
+  </section>
 
-This course teaches you how to test software without writing code, using practical black box testing techniques applied in real-world software teams.
-
----
-
-## 📚 What You Will Learn
-
-| Skill | Description |
-|-------|-------------|
-| 🔍 **Requirements Analysis** | Understand software requirements from a user's perspective |
-| 📝 **Test Case Design** | Design effective manual test cases using black box techniques |
-| 🕵️ **Exploratory Testing** | Perform exploratory testing to uncover hidden defects |
-| 📱 **Web & Mobile Testing** | Test web and mobile applications systematically |
-| 🐛 **Bug Reporting** | Write clear, professional bug reports that developers can act on |
-| 🤝 **Agile Collaboration** | Collaborate effectively with developers and product managers |
-
----
-
-## 🎯 Course Approach
-
-<div style="background: #1a1a2e; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
-<strong>Hands-on practice, not theory.</strong><br>
-You will work with real application scenarios and complete a final manual testing project that can be used as part of your <strong>QA portfolio</strong>.
-</div>
-
----
-
-## 👥 Who Is This Course For?
-
-| 🌱 Beginners | 🔄 Career Switchers | 💻 Junior Developers |
-|:---:|:---:|:---:|
-| No programming background needed | Entering the QA / testing field | Strengthen your testing mindset |
-
----
-
-## 🏆 Course Outcome
-
-By the end of the course, you will have the skills and confidence required to perform the role of a **Junior Manual QA / Software Tester** in a professional environment.
-
----
-
-## 🌐 Follow Skill-Wanderer
-
-Stay updated with more courses and content!
-
-<a href="https://skill-wanderer.com/" style="display: inline-block; padding: 10px 20px; background: #16213e; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Visit skill-wanderer.com →</a>
+  <section class="section">
+    <div class="outcome-section">
+      <h2>🏆 Course Outcome</h2>
+      <p>By the end of the course, you will have the skills and confidence required to perform the role of a professional tester.</p>
+      <div class="outcome-badge">Junior Manual QA / Software Tester</div>
+    </div>
+  </section>
+</main>
