@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Skill-Wanderer</title>
   <meta name="description" content="Learn how to test software without writing code, using practical black box testing techniques applied in real-world software teams.">
+  <link rel="icon" type="image/svg+xml" href="https://skill-wanderer.com/skill-wanderer-favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #00C58E;
-      --primary-dark: #00A676;
+      --primary: #FF5722;
+      --primary-light: #FF7043;
+      --primary-dark: #E64A19;
+      --accent-yellow: #FFB300;
       --bg-dark: #0a0a0a;
-      --bg-card: #111111;
-      --bg-card-hover: #1a1a1a;
+      --bg-section: #111111;
+      --bg-card: #1a1a1a;
+      --bg-card-hover: #222222;
       --text-primary: #ffffff;
       --text-secondary: #9CA3AF;
       --text-muted: #6B7280;
-      --border-color: #222222;
+      --border-color: #333333;
     }
 
     * {
@@ -37,9 +41,12 @@
 
     /* Header */
     .header {
-      background: linear-gradient(180deg, rgba(0, 197, 142, 0.1) 0%, transparent 100%);
+      background: var(--bg-dark);
       border-bottom: 1px solid var(--border-color);
       padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     .header-content {
@@ -64,12 +71,6 @@
     .logo-icon {
       width: 32px;
       height: 32px;
-      background: var(--primary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
     }
 
     .nav-links {
@@ -94,25 +95,39 @@
       margin: 0 auto;
       padding: 5rem 2rem;
       text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 100'%3E%3Cpath d='M0,80 Q300,20 600,60 T1200,40' stroke='%23FF5722' stroke-width='2' fill='none' opacity='0.3'/%3E%3C/svg%3E") no-repeat center;
+      background-size: cover;
+      pointer-events: none;
     }
 
     .hero-badge {
       display: inline-block;
-      background: rgba(0, 197, 142, 0.15);
+      background: rgba(255, 87, 34, 0.15);
       color: var(--primary);
       padding: 0.5rem 1rem;
       border-radius: 50px;
       font-size: 0.85rem;
       font-weight: 500;
       margin-bottom: 1.5rem;
-      border: 1px solid rgba(0, 197, 142, 0.3);
+      border: 1px solid rgba(255, 87, 34, 0.3);
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%);
+      font-style: italic;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent-yellow) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -161,22 +176,22 @@
 
     .btn-primary {
       background: var(--primary);
-      color: #000;
+      color: #fff;
     }
 
     .btn-primary:hover {
-      background: var(--primary-dark);
+      background: var(--primary-light);
       transform: translateY(-2px);
     }
 
     .btn-secondary {
-      background: var(--bg-card);
+      background: transparent;
       color: var(--text-primary);
       border: 1px solid var(--border-color);
     }
 
     .btn-secondary:hover {
-      background: var(--bg-card-hover);
+      background: var(--bg-card);
       border-color: var(--primary);
     }
 
@@ -187,18 +202,22 @@
       padding: 4rem 2rem;
     }
 
+    .section-alt {
+      background: var(--bg-section);
+    }
+
     .section-title {
-      font-size: 2rem;
+      font-size: 2.25rem;
       font-weight: 700;
       margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
+      text-align: center;
+      color: var(--primary);
     }
 
     .section-subtitle {
       color: var(--text-secondary);
       margin-bottom: 2.5rem;
+      text-align: center;
     }
 
     /* Cards Grid */
@@ -239,7 +258,7 @@
 
     /* Approach Box */
     .approach-box {
-      background: linear-gradient(135deg, rgba(0, 197, 142, 0.1) 0%, var(--bg-card) 100%);
+      background: linear-gradient(135deg, rgba(255, 87, 34, 0.1) 0%, var(--bg-card) 100%);
       border: 1px solid var(--primary);
       border-radius: 16px;
       padding: 2.5rem;
@@ -255,6 +274,10 @@
       color: var(--text-secondary);
       max-width: 600px;
       margin: 0 auto;
+    }
+
+    .approach-box strong {
+      color: var(--primary);
     }
 
     /* Audience Grid */
@@ -304,6 +327,7 @@
     .outcome-section h2 {
       font-size: 1.75rem;
       margin-bottom: 1rem;
+      color: var(--primary);
     }
 
     .outcome-section p {
@@ -315,7 +339,7 @@
     .outcome-badge {
       display: inline-block;
       background: var(--primary);
-      color: #000;
+      color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 50px;
       font-weight: 600;
@@ -323,6 +347,7 @@
 
     /* Footer */
     .footer {
+      background: var(--bg-section);
       border-top: 1px solid var(--border-color);
       padding: 3rem 2rem;
       text-align: center;
@@ -390,11 +415,12 @@
   <header class="header">
     <div class="header-content">
       <a href="https://skill-wanderer.com/" class="logo">
-        <div class="logo-icon">🎯</div>
+        <img src="https://skill-wanderer.com/skill-wanderer-favicon.svg" alt="Skill-Wanderer" class="logo-icon">
         <span>SKILL-WANDERER</span>
       </a>
       <nav class="nav-links">
         <a href="https://skill-wanderer.com/">Home</a>
+        <a href="https://skill-wanderer.com/learning-path">Learning Path</a>
         <a href="https://dojo.skill-wanderer.com/">Dojo</a>
         <a href="https://wanderings.skill-wanderer.com/">Blog</a>
         <a href="https://skill-wanderer.com/contact">Contact</a>
