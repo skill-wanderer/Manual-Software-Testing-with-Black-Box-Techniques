@@ -5,7 +5,7 @@ This repository contains all the learning materials for the course **Manual Soft
 > 📖 **Note:** The course lessons are available in multiple learning formats. This repository stores the **reading format** only.
 
 📚 **Access the course here:**  
-[https://dojo.skill-wanderer.com/course/view.php?id=10](https://dojo.skill-wanderer.com/course/view.php?id=10)
+[https://dojo.skill-wanderer.com/courses/manual-software-testing-black-box-techniques](https://dojo.skill-wanderer.com/courses/manual-software-testing-black-box-techniques)
 
 ---
 
